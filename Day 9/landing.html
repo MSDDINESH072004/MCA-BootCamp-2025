@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    
+    <style>
+        *{
+            /* background-color: rgb(255, 0, 0); */
+        }
+        {*
+           margin: 0px;
+        }
+        #container{
+          height:830px;
+          width:100%;  
+          background-size: contain;
+          position: relative;   
+        }
+        .mini{
+            bottom: 0px;
+            right: 0px; 
+            position: absolute;
+            display: flex;
+        }
+        .mini img{
+            height: 100px;
+            width: 150px;
+            margin: 3px;
+            margin-bottom: 150px;
+            border-radius: 8px;   
+        }
+        .mini :hover{
+            transform: scale(1.1);
+            transition-duration: 0.4s;    
+        }
+        #arrow1{
+            height:50px;
+            width: 50px;
+            margin-left: 50px;
+            transform: rotate(180deg);
+            border: 0px solid rgba(255, 255, 255, 0.797);
+            background-color: rgb(212, 202, 202);
+            border-radius: 10px;
+           
+        }
+        #arrow2{
+            height: 50px;
+            width: 50px;
+            margin-top: 290px;
+            margin-left: 1200px;
+            border: 0px solid rgba(255, 255, 255, 0.797);
+            background-color: rgb(212, 202, 202);
+            border-radius: 10px;
+        }
+        
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .cards :hover{
+            transform: scale(1.1);
+            box-shadow: 10px 10px 30px;
+            border-radius: 20px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+           
+        }
+        .container2 img{
+            height: 100px;
+            position: absolute;
+        }
+        .bannertext{
+            position: absolute;
+            top: 30px;
+            color: white;
+            
+        }
+        .container2 img{
+          height:830px;
+          width:100%;  
+          background-size: contain;
+        }
+        .bannertext img{
+            height: 60px;
+            margin-left: 50px;
+            margin-top: 10px;
+           
+        }
+        .bannertext h1{
+            font-family: sans-serif;
+            font-size: xx-large;    
+        }
+        .button{
+            position: absolute;
+            margin-left: 1360px;
+            margin-top: 40px;    
+        }
+        .button2{
+            position: absolute;
+            margin-left: 1230px;
+            margin-top: 40px;
+        }
+       .container button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        } 
+        .gmail{
+            position: absolute;
+            margin-left: 950px;
+            margin-top: 40px;    
+        }
+        .gmail form{
+            height: 45px;
+            width: 150px;
+        }
+        .gmail input{
+            border-radius: 10px;
+            background-color: black;
+            border: 1px solid rgba(255, 255, 255, 0.563);
+            height: 40px; 
+            width: 250px;
+        }
+        .getstart button{
+             position: absolute;
+             margin-left: 900px;
+             margin-top: 350px;   
+        }
+        .getstart:hover{
+             cursor: pointer;   
+        }
+        .cards2{
+            display: flex;    
+        }
+        .cards2 :hover{
+            transform: scale(1.1);
+            box-shadow: 10px 10px 30px;
+            border-radius: 20px; 
+            transition-duration: 0.4s;
+        }
+        .end .foot{
+            display: flex;
+            justify-content: space-evenly;
+            color: white
+    
+        }
+        .foot li{
+            list-style-type: none;
+            margin-top: 60px;
+            font-family: Arial ;
+        }
+        #arrow1 .img :hover{
+            cursor: pointer;
+        }
+        #arrow2 .img:hover{
+             cursor: pointer;
+        }
+        .netcover img{
+            height: 750px;
+            width: 100%;
+            margin-left: 0px;
+            position: absolute;
+               
+        }
+        #postertext{
+             position: absolute;
+            color: white;
+            margin-top: 630px;
+            margin-left: 25%;
+            font-family: Georgia, 'Times New Roman', Times, serif;  
+           
+        } 
+        .end{
+            margin-top: 800px;
+            height: 50%;
+        }
+        .list1 ul{
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.564);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 200px;
+            margin-top: 80px;
+            font-family: Arial 
+        }
+        .list2 ul{
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.564);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 500px;
+            margin-top: -180px;
+            font-family: Arial;
+            align-items: flex-start;
+     
+        }
+        .list4 ul{
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.564);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: -180px;
+            margin-left: 860px;
+            margin-bottom: 10px;
+            font-family: Arial;
+            align-items: flex-start;
+        }
+        .eng{
+            display: flex;
+            justify-content: space-between;    
+        }
+        .eng button{
+            border: 1px solid rgba(255, 255, 255, 0.655);
+            border-radius: 10px; 
+            background-color: rgb(36, 31, 31);
+            color: rgb(255, 255, 255);
+            margin-right: 30px;
+            margin-top: 10px;
+            height: 40px;
+            width: 150px;
+        }
+        .eng button :hover{
+            color: rgb(233, 87, 87);
+        }
+        .list1 ul :hover{
+            cursor: pointer;
+        }
+        .list2 ul :hover{
+            cursor: pointer;
+        }
+        .list4 ul :hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <link rel="stylesheet" href="loginpage.html">
+        <header>
+           <div class="container2">
+                <img src="/DEADPOOLCVR (2).png" alt="">
+           </div>
+           <div class="bannertext">
+                <img  src="/netflix2.png" alt="">
+                <!-- <img style="margin-left: 50px; margin-top: 170px; height: 150px;" src="deadpool title card.png" alt=""> -->
+                <h1 style="margin-left: 750px; font-size: xxx-large;margin-top: 100px;">Unlimited Movies ,TV</h1>
+                 <h1 style="margin-left: 850px; font-size: xx-large;margin-top: 10px;">Shows And More</h1> 
+            </div>
+            <div class="getstart">
+                <button style="height: 70px; width: 150px;color: rgb(255, 255, 255);background-color: rgb(246, 18, 18);border: 0px ; border-radius: 10px;"> 
+                  <h2>Get Started ›</h2>
+                </button>
+            </div>       
+            <div class="button">
+                <button style="height: 45px; width: 120px;color: rgb(255, 255, 255);background-color: rgb(0, 0, 0);border: 1px solid rgba(255, 255, 255, 0.479); border-radius: 10px;">
+                  <strong> English</strong>
+                </button>
+            </div>  
+            <div class="button2">       
+                    <button style="height: 45px; width: 120px; background-color: red;color: white;border-radius: 10px; border: 0px;" > 
+                   <strong>Sign up</strong>
+                   </button> 
+            </div>  
+            <div class="gmail">
+                <form >
+                    <label>
+                        <input type="search"placeholder="   Search Movies..">
+                    </label>
+                </form>
+            </div>
+        </header>
+       <div id="container">
+            <div class="arrow">
+                <img  id="arrow1" onclick="changeleft()"src="/arrownew2.png" alt="">   
+                <img  id="arrow2" onclick="changeimg()" src="/arrownew2.png" alt="">
+            </div>
+
+            <div class="mini">
+                <img style="position: relative;" onclick="click(0)" src="/deadpool.jpg" alt="">
+                <img onclick="click(1)" src="/Deadpool2.webp" alt="">
+                <img onclick="click(2)" src="/deadpool5.jpg" alt="">
+                <img onclick="click(3)" src="/deadpool4.jpg" alt="">
+            </div>
+        </div>
+        <script src=".\landing.js"></script> 
+   <main>
+    <br>
+       <h1 style=" margin-top: 30px;color: white; margin-left: 30px;font-family: sans-serif; ">
+           Action Extravaganza
+       </h1>
+       <div style="margin-top: 60px;" class="cards">
+           <img  style="height: 460px; width: 300px; "  src="/ironman.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/spiderman.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/carry.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/loki.jpeg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/John_Wick_TeaserPoster.jpg" alt="">
+       </div>
+       <h1 style="margin-top: 30px; color: white;margin-left: 30px; font-family: sans-serif;">
+           Trending Series
+       </h1>
+       <div class="cards2">
+           <img  style="height: 460px; width: 300px; " src="/wednesday2.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/squg.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/moneyheist.webp" alt="">
+           <img  style="height: 460px; width: 300px; " src="/pb.jpg" alt="">
+           <img  style="height: 460px; width: 300px; " src="/alice-in-borderland.jpg" alt="">
+       </div>
+       
+       <hr>
+       <div class="netcover">
+            <img src="/netflix-cover.png" alt="">
+        <div id="postertext">
+             <h1 style="font-size: xxx-large;">Get Ready For Your Show Time 🍿</h1>
+       </div>
+       </div>
+       
+       
+       
+       
+   </main>  
+   
+   <footer>
+    
+
+        <div class="end">
+            <div class="list1">
+                <ul >
+                    <li><ins>FAQ</ins></li>
+                    <li><ins>Invester Relations</ins> </li></li>
+                    <li> <ins>Privacy</ins> </li>
+                    <li> <ins>Speed Test</ins></li>    
+                </ul>
+            </div>
+            <div class="list2">
+                <ul >
+                    <li><ins>Help Centre</ins></li>
+                    <li><ins>Jobs</ins></li>
+                    <li><ins>Cookies Preferences</ins></li>
+                    <li> <ins>Legal Notices</ins></li>
+                    
+                </ul>
+            </div>
+            <div class="list4">
+                <ul >
+                     <li><ins>Media Centre</ins></li>
+                     <li><ins>Terms Of Use</ins></li>
+                     <li><ins>Contact Us</ins></li>
+                    
+                </ul>
+            </div>
+           
+            <!-- <hr style="color: rgba(154, 148, 148, 0.474);">
+            <p style="font-family: Arial; color: rgba(255, 255, 255, 0.868); margin-left: 30px;">Copyrights © 2010 - 2025 Netflix . All Rights Recieved</p>
+           h </p>
+        </div> -->
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        
+        <hr>
+            
+        <DIV  class="eng">
+
+            <p style="font-family: Arial;color: rgba(255, 255, 255, 0.564);; margin-left: 30px;">Copyrights © 2010 - 2025 Netflix . All Rights Recieved</p></p>
+            <button><strong>India / English</strong></button>
+        </DIV>
+             
+    </footer>
+    
+</body>
+</html>
