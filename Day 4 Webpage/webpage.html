@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        
+    }
+    header{
+        margin: 0px;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        position: fixed;
+        top: 1px;  
+        margin-top: -40px; 
+       
+    }
+    .nav2{
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+    .nav1{
+        display: flex;
+        align-items: center;
+        width: 70%;    
+    }
+    .nav1 ul{
+        color: white;
+        display: flex;justify-content: space-evenly;
+        width:80%;
+        list-style-type: none;
+        padding-left: 0px; 
+        margin-top: 50px;        
+
+    }
+    .nav1 ul :hover{
+        color: rgb(222, 124, 37);
+    }
+    .nav2 ul{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        list-style-type: none;   
+         
+        margin-top: 50px; 
+    }
+    .nav2 ul :hover{
+        color:  rgb(222, 124, 37);
+    }
+    .container{
+         background-color:rgba(0, 0, 0, 0.637);  
+         width: 100%; 
+        
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: -100px;
+        margin-top: 50px;
+        
+       
+    }
+    .container2{
+        display: flex;
+        justify-content: space-evenly;
+       
+    }
+    .card img{
+        height:200px;
+        padding-right: 20px;
+    }
+    .card :hover{
+         margin-top: -10px;
+         color: black;
+    }
+    .image img:hover{
+        cursor: pointer;
+    }    
+    .list :hover{
+        transform: scale(1.1);
+        color: rgb(222, 124, 37);
+        transition-duration: 0.4s;
+        
+    }
+    .image{
+        display: flex;
+        justify-content: space-evenly;  
+    }
+    
+    .image img{
+        border-radius: 20px; 
+        width: 80%;
+        margin-top: 50px;
+    }
+    .nav1 :hover{
+        cursor: pointer;
+    }
+    .Note h2{
+        padding: 0px;
+        position: relative;
+        bottom: 5px;
+    }
+    .form{
+        align-items: center;
+        margin: 38px;
+        margin-left: -10px;      
+    }
+    .img h1{
+      padding: 40px;
+      padding-bottom: 0px;
+      margin: 0px;
+    }
+    .list li{
+        width: -100%;
+    } 
+    .button button:hover{
+        color: rgb(237, 229, 229);
+        transform: scale(1.1);
+        box-shadow: 2px 2px 20px;
+        
+        
+    } 
+    .button {
+        position: relative;
+        top: 250px;
+        left: 80px;
+    }
+    .note .h3{
+        position: relative;
+        top: 140px;
+        left: 80px;
+    }
+        .offer h1{
+         position: relative;
+        top: 40px;
+   }
+   .offer {
+       justify-content: space-evenly;
+       border: 2px solid  rgba(219, 215, 211, 0.762); 
+       height: 480px;
+       width: 450px;
+       margin-top: 70px;
+       display: flex;
+       border-radius: 20px;
+   }
+   .offer img{
+       margin-left: 15px;
+       margin-top: 20px;
+       margin-right: 15px;
+       margin-bottom: 30px;
+       border-radius: 20px;
+   }
+   .offer img :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.4s;
+   }
+   .offer .img2{
+       
+       border: 2px solid  rgba(219, 215, 211, 0.762) ; 
+       height: 480px;
+       width: 450px;
+       margin-top: 2px;
+       margin-left: 70px;
+       border-radius: 20px;
+   } 
+   .offer img:hover{
+         transform: scale(1.1);
+         cursor: pointer;
+         transition-duration: 0.4s;
+         
+   }  
+   .offer .img3{
+       border: 2px solid rgba(219, 215, 211, 0.762); 
+       height: 480px;
+       width: 450px;
+       margin-top: 2px;
+       margin-left: 70px;
+       border-radius: 20px;
+   }
+   .offer .img :hover{
+         transform: scale(1.1);
+         cursor: pointer;
+         
+
+   }
+   .explore .exp{
+      display: flex;
+      justify-content: space-evenly;
+   }
+   .exp img{
+        height: 200px; 
+        border-radius: 20px;
+        border-bottom-left-radius: 1px;   
+        border-bottom-right-radius: 1px;  
+   }
+   .exp{
+         margin-top: 70px;
+   }
+   .exp .exp1{
+        border: 2px solid rgba(179, 173, 173, 0.644);
+        height: 300px;
+        border-radius: 23px; 
+   }
+   .exp .exp1 img:hover{
+        transform: scale(1.1);
+         transition-duration: 0.4s;
+   }
+   .exp  .exp2{
+        border: 2px solid  rgba(179, 173, 173, 0.644);
+        height: 300px;
+        border-radius: 23px;
+   }
+   .exp .exp2 img:hover{
+        transform: scale(1.1);
+         transition-duration: 0.4s;
+   }
+   .exp .exp3 {
+         border: 2px solid rgba(179, 173, 173, 0.644);
+        height: 300px;
+        border-radius: 23px;
+   }
+   .exp .exp3 img:hover{
+        transform: scale(1.1);
+         transition-duration: 0.4s;
+   }
+    .supclass ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        font-family: sans-serif;
+
+   }
+   .supclass2 ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        font-family: sans-serif;
+   }
+   .end{
+    border: 3px;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    cursor: pointer;
+   }
+   .end .foot{
+        display: flex;
+        justify-content: space-evenly;
+        color: white
+    
+   }
+   .foot li{
+        list-style-type: none;
+        margin-top: 60px;
+        font-family: Arial ;
+   }
+   .list1{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.564);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-family: Arial 
+   }
+   .list2{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.564);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 500px;
+    margin-top: -250px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    align-items: flex-start;
+     
+   }
+   .list3{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.564);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 850px;
+    margin-top: -300px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    align-items: flex-start;
+   }
+   .list4{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.564);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 1160px;
+    margin-top: -113px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    align-items: flex-start;
+   }
+   #arrow1{
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    border: 0.5px solid rgba(255, 255, 255, 0.797);
+    background-color: rgb(212, 202, 202);
+    border-radius: 10px;
+     transform: rotate(180deg);
+
+
+   }
+   #arrow2{
+    height:50px;
+    width: 50px;
+    margin-left: 1300px;
+    border: 0.5px solid rgba(255, 255, 255, 0.797);
+    background-color: rgb(212, 202, 202);
+    border-radius: 10px;
+    position: absolute;
+   }
+   .img img{
+        height: 600px;
+        width: 100%;
+        position: relative;
+        
+        
+    }
+    
+   
+   
+   </style> 
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <header>
+        <nav class="container">
+            <div class="nav1">
+                <ul style="font-family: Arial">
+                    <li>Store </li>
+                    <li>Phones </li>
+                    <li>Tablet</li>
+                    <li>TV & Smart Home</li>
+                    <li>Smart Watch & Audio</li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul  style="font-family: Arial" >
+                    <li> <a style="height: 20px;"> <button style="background-color: rgb(255, 255, 255);border-radius: 15px; border-color:black"> <a href="login.html">Sign In</a></button> </li>
+                    <li>Support</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            
+            <div class="form">
+                <form action="">
+                    <label for="">
+                         <input style=" border-radius: 15px;width:220px ;  height: 20px; border-color:black;margin-top: 15px; " type="text" placeholder="Search Products...">
+                    </label>
+                </form>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <div style="height: -50px;" class="img">
+           <img style="margin-top: 50px;" src="/xioami.webp" alt=" loading" > 
+            <div class="arrow">
+                <img id="arrow1" src="/arrow.png" alt="">
+                <img id="arrow2" src="/arrow.png" alt="">
+            </div>
+        </div>  
+            <br>
+            <br>
+            <br>
+            <h1 style="text-align: center ; font-family: sans-serif;">Featured Products</h1>
+        
+        
+        <b>
+            <ul style="font-family:sans-serif" class="list">
+                <li>Smart TV</li>
+                <li>Tablets</li>
+                <li>Life Style</li>
+                <li>Smart Phones</li>
+           </ul>
+        </b>
+        <br>
+        <br>
+        <div class="container2">
+            <div style= "border: 1px solid rgba(255, 255, 255, 0.637); width: 200px  ; height: 300px; background-color: rgb(248, 244, 244); border-radius: 10px;" class="card">
+                <img src="https://i03.appmifile.com/384_item_in/21/01/2025/57e74ae437499b7bcc66a9a62b07eaf3.png?thumb=1&w=320&f=webp&q=85" alt="">
+                <div class="text">
+                     <h1 style="padding: 35px; margin: -15px; font-size: medium; font-family:Arial ;">Xiaomi 15 Pro</h1>
+                     <!-- <h2 class="he"> Hello</h2> -->
+                    <p style="margin-top: -40px; padding: 20px;">
+                         <b style="font-family:Arial">From 10,999</b> <s>14,999</s>
+                    </p>     
+                </div>
+               
+            </div>    
+            <div style= "border: 1px solid rgba(218, 206, 206, 0.637);width: 200px; height: 300px; background-color: rgb(245, 240, 240); border-radius: 10px" class="card">
+                <img src="/7c4e711621bb12e2c405bfc9e38aa17d.webp" alt="">
+                 <h2 style="padding: 35px;  margin: -15px;  font-family:Arial ; font-size:medium">Redmi Note 14 Pro</h2>
+                 <p  style="margin-top: -40px; padding: 20px;">
+                    <b style="font-family:Arial">From 9,999</b> <s>12,999</s>
+                 </p>
+            </div>
+            <div style= "border: 1px solid rgba(218, 206, 206, 0.637) ;width: 200px   ; height: 300px; background-color: rgb(245, 240, 240); border-radius: 10px;" class="card">
+                <img src="/3f5872ded299b098ae2e2d811703969b.webp" alt="">
+                 <h2 style="padding: 35px; margin: -15px; font-family:Arial ;font-size:medium">Xiaomi 15 Pro</h2>
+                  <p style="margin-top: -40px; padding: 20px;">
+                     <b style="font-family:Arial">From 14,999</b> <s>19,999</s>
+                 </p>
+        </div>
+            <div style= "border: 1px solid rgba(218, 206, 206, 0.637);width: 200px    ; height: 300px; background-color: rgb(245, 240, 240); border-radius: 10px;;" class="card">
+                <img src="/7c4e711621bb12e2c405bfc9e38aa17d.webp" alt="">
+                 <h2 style="padding: 35px;margin: -15px; font-family:Arial ;font-size: medium;">Redme Note 14 Pro+</h2>
+                  <p style="margin-top: -40px; padding: 20px;">
+                     <b style="font-family:Arial">From 7,999</b> <s>14,000</s>
+                  </p>
+            </div>
+            <div style= "border: 1px solid rgba(218, 206, 206, 0.637);width: 200px ; height: 300px; background-color: rgb(245, 240, 240); border-radius: 10px;" class="card">
+                <img src="/x image.webp" alt="loading">
+                <h2 style="padding: 35px;margin: -15px; font-family:Arial ;font-size: medium;">Xiaomi 15 Ultra</h2>
+                 <p style="margin-top: -40px; padding: 20px;">
+                    <b style="font-family:Arial">From 25,000</b> <s>30,000</s>
+                  </p>
+            </div>
+            
+        </div>
+        
+<nav class="container3">
+    <div class="image">
+            <img src="/redmi.webp" alt="">
+        <div class="Note">    
+            <h2 style="font-family:  sans-serif; position: relative; top: 150px;left: 5px; "> Redmi Note 14 Series</h2>
+                <strong>
+                    <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: center; margin: 0%;  position: relative; top: 150px;left: 5px; ">Lowest Price Ever</h4>
+                </strong>
+                <strong>
+                    <h3 style="font-family: Arial, sans-serif;text-align: center;margin-bottom: -50px; position: relative; top: 150px;left: 5px; "> Starrting At $16,999</h3>
+                </strong>        
+                <div class="button">  
+                    <button style="height: 40px; width: 90px; background-color: rgb(0, 0, 0);border-radius: 10px;margin-bottom: -50px; ">
+                        <div class="learn">
+                            <p style="color: rgb(242, 237, 237); font-family: sans-serif;margin-bottom: 60px; margin-top: 10px;"><strong >Learn More</strong></p>
+                        </div>     
+                    </button> 
+                </div>       
+        </div>
+    </div>
+</nav>  
+<h1 style="font-family: sans-serif;text-align: center; margin-top: 95px;">
+        Exclusive Offers
+    </h1>
+<div class="offer">
+    <div >
+        <img src="/smart.webp" alt="loading">
+        <h2 style="text-align: center;font-family:Arial ;">Smart Bundles</h2>
+        <p style="font-size: larger; text-align: center;font-family:Arial">Buy More ! Save At To 45% Off</p>
+        
+    </div>
+     <div class="img2">
+        <img style="border-radius:20px ;" src="/smart2.webp" alt="">
+                <h2 style="text-align: center; font-family:Arial">Free Spotify Premium</h2>
+        <p style="font-size: larger; text-align: center;margin-top: 0px;  font-family:Arial">Enjoy Up To 4 Months Of Ad-Free Music</p>
+    </div>    
+     <div class="img3">
+        <img style="border-radius: 20px;" src="/smart3.webp" alt="">
+                <h2 style="text-align: center; font-family:Arial">New User Zone</h2>
+        <p style="font-size: larger; text-align: center;font-family:Arial">Get The Xiaomi Store App </p> 
+    </div>    
+</div>
+<div class="explore">
+    <h1  style="font-family: sans-serif;text-align: center; margin-top: 95px;">
+        Explore xiaomi   
+    </h1>
+    <div class="exp"> 
+        <div class="exp1">
+            <img src="/xiaomi explore.webp" alt="">
+            <div><h3 style="text-align: center; font-family:Arial;">xioami x Lecia</h3></div>
+
+        </div>
+        <div class="exp2">
+            <img src="/EXPLORE 2.webp" alt="">
+           <div><h3 style="text-align: center; font-family:Arial;">xioami Rewards Club</h3></div>
+           
+        </div>
+        <div class="exp3">
+            <img src="/EXPLORE 3.webp" alt="">
+            <div><h3 style="text-align: center; font-family:Arial;font-size: ;">xioami India : 10 Years Of Tommorow</h3></div>
+        </div>    
+    </div>    
+</div>
+<div class="sup">
+    <h1  style="font-family: sans-serif;text-align: center; margin-top: 90px;">
+        Xiaomi Support   
+    </h1>
+    <div class="supclass">  
+        <ul>
+            <li><h1 style="font-size: larger;">Xioami Exange</h1></li>
+            <li><h1 style="font-size: larger;">Mi Complete Protec...</h1></li>
+            <li><h1 style="font-size: larger;">Service Centers</h1></li>
+            <li><h1 style="font-size: larger;">Mi Extended Wara...</h1></li>
+        </ul>
+        <div class="supclass2">
+            <ul>
+                <li><p style="margin-top: -60px; font-family: font-family: ;">Save More And Go Green With</p>
+                    <p style="text-align: center;">your Old Mobiles</p></li>
+                <li><p>Prtect Your Device With In 2 days</p></li>
+                <li>Right Where You Need Us</li>
+                <li>Ensure Your Device</li>
+                
+            </ul>
+       </div>     
+        
+    </div>  
+</div>
+  
+    </main>
+    <footer>
+        <div class="end">
+            <ul class="foot">
+               <strong> <li>Support</li></strong>
+                <strong> <li>Shop And Learn</li></strong>
+                <strong> <li>Retail Store </li></strong>
+                <strong><li> About Us</li></strong>
+            </ul>
+            <div >
+                <ul class="list1">
+                    <li>Online Help</li>
+                    <li>Customer Service</li>
+                    <li>Warrenty</li>
+                    <li>User Guide</li>
+                    <li> Service Centre</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list2">
+                    <li>Xioami Phones</li>
+                    <li>Redmi Phones</li>
+                    <li>TV's</li>
+                    <li>Laptops & Tablets</li>
+                    <li>Life Styles</li>
+                    <li> Audio</li>
+                    <li>Smart Home</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list3">
+                    <li>Mi Home </li>
+                    <li>Mi Arthurised Store</li>
+                    <li>Mi Store Franchise</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list4">
+                     <li>Xioami</li>
+                     <li>Privacy Policy</li>
+                     <li>User Agreement</li>
+                     <li>Tv Quality</li>
+                     <li>Service Quality</li>
+                     <li>SmartPhone Quality</li>
+                     <li>Join Our Team</li>
+                </ul>
+            </div>
+            <hr style="color: rgba(154, 148, 148, 0.474);">
+            <p style="font-family: Arial; color: rgba(255, 255, 255, 0.868); margin-left: 30px;">Copyrights © 2010 - 2025 Xioami . All Rights Recieved</p>
+            <p style="font-family: Arial; color: rgba(255, 255, 255, 0.868); margin-left: 1350px; margin-top: -30px;"> India / English </p>
+        </div>
+    </footer>
+</body>
+</html>
